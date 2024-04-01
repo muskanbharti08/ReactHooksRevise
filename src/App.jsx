@@ -4,6 +4,9 @@ import React, { useRef, useState } from 'react'
 import Home from './Component/Home'
 import Footer from './Component/Footer'
 import Header from './Component/Header'
+import Hook1 from './Component2/Hook1'
+import Hook3 from './Component2/Hook3'
+import Hook3_1 from './Component2/Hook3_1'
 
 
 let muskan= {
@@ -35,31 +38,37 @@ export default function App() {
 
 //  ? =  optional changing operator
 
-let [user,setUser] = useState(null);
+// let [user,setUser] = useState(null);
 
-let c1 = ()=>{
-  let obj1 = {
-    name:"Muskan"
-  }
-  setUser(obj1);
-}
+// let c1 = ()=>{
+//   let obj1 = {
+//     name:"Muskan"
+//   }
+//   setUser(obj1);
+// }
 
 
 
   return (
-    <div>
-      {/* <h1 ref = {muskan}>move here </h1> */}
+  //   <div>
+      // {/* <h1 ref = {muskan}>move here </h1> */}
 
-      {/* <h1 className="">The name is {user?.name}</h1> */}
-      <h1 className="">my name is {user?.name}</h1>
-      <Header/>
-      <Home/>
-      <Footer/>
+      // {/* <h1 className="">The name is {user?.name}</h1> */}
+      // <h1 className="">my name is {user?.name}</h1>
+      // <Header/>
+      // <Home/>
+      // <Footer/>
       
-      {/* <button  onClick={clk} className="">Scroll</button> */}
+      // {/* <button  onClick={clk} className="">Scroll</button> */}
       
-      <button  onClick={c1} className="">click me</button>
-      </div>
+      // <button  onClick={c1} className="">click me</button>
+      // </div>
+    <>
     
+    {/* <Hook1/> */}
+
+    <Hook3/>
+    <Hook3_1/>
+    </>
   )
 }
