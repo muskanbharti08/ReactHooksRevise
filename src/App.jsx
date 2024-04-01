@@ -8,6 +8,8 @@ import Hook1 from './Component2/Hook1'
 import Hook3 from './Component2/Hook3'
 import Hook3_1 from './Component2/Hook3_1'
 import Hook2_02 from './Component2/Hook2_02'
+import Hook2_01 from './Component2/Hook2_01'
+import Hook2 from './Component2/Hook2'
 
 
 
@@ -82,7 +84,9 @@ export default function App() {
 
 
     <userContext.Provider value = "ucP">
-      <Hook2_02 user  = "Raman"/>
+      {/* <Hook2_02 user  = "Raman"/> */}
+      <Hook2_01 user = "Muskan" />
+      <Hook2 name = "Muskan"/>
     </userContext.Provider>
 
 
