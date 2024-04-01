@@ -1,22 +1,28 @@
 
 
-import React, { useRef, useState } from 'react'
+import React, { createContext, useRef, useState } from 'react'
 import Home from './Component/Home'
 import Footer from './Component/Footer'
 import Header from './Component/Header'
 import Hook1 from './Component2/Hook1'
 import Hook3 from './Component2/Hook3'
 import Hook3_1 from './Component2/Hook3_1'
+import Hook2_02 from './Component2/Hook2_02'
 
 
-let muskan= {
-  user : {
-    name:"muskan",
-    age:21
-  }
-}
 
 
+
+
+// let muskan= {
+//   user : {
+//     name:"muskan",
+//     age:21
+//   }
+// }
+
+
+export let userContext =  createContext();
 
 export default function App() {
 
@@ -65,10 +71,22 @@ export default function App() {
       // </div>
     <>
     
-    {/* <Hook1/> */}
+    
 
-    <Hook3/>
-    <Hook3_1/>
+
+
+    {/* useEffect */}
+    {/* <Hook1/> */}
+    {/* <Hook3/>
+    <Hook3_1/> */}
+
+
+    <userContext.Provider value = "ucP">
+      <Hook2_02 user  = "Raman"/>
+    </userContext.Provider>
+
+
+
     </>
   )
 }
